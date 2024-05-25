@@ -1,0 +1,91 @@
+<mxfile host="Electron" modified="2024-05-25T13:37:16.958Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.4.0 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="t-YdXjKPGA69hRptA6ch" version="24.4.0" type="device">
+  <diagram name="Page-1" id="rgkoJC6RYOmB4qYAJvC5">
+    <mxGraphModel dx="1821" dy="1061" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="UK1pHQdg1DBT67tk97Uu-1" value="S3 Bucket" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;fillColor=#7AA116;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.s3;" vertex="1" parent="1">
+          <mxGeometry x="482" y="320" width="78" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="UK1pHQdg1DBT67tk97Uu-2" value="Route 53" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.route_53;fillColor=#F58536;gradientColor=none;" vertex="1" parent="1">
+          <mxGeometry x="250" y="260" width="70.5" height="85.5" as="geometry" />
+        </mxCell>
+        <mxCell id="UK1pHQdg1DBT67tk97Uu-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.56;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="UK1pHQdg1DBT67tk97Uu-3" target="UK1pHQdg1DBT67tk97Uu-12">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="290" y="590" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="200" y="459" />
+              <mxPoint x="200" y="585" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UK1pHQdg1DBT67tk97Uu-3" value="Users" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#232F3D;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.user;" vertex="1" parent="1">
+          <mxGeometry x="70" y="420" width="78" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="UK1pHQdg1DBT67tk97Uu-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.27;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="UK1pHQdg1DBT67tk97Uu-3" target="UK1pHQdg1DBT67tk97Uu-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="200" y="459" />
+              <mxPoint x="200" y="283" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UK1pHQdg1DBT67tk97Uu-7" value="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="148" y="320" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="UK1pHQdg1DBT67tk97Uu-10" value="Cloud Front" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.cloudfront;fillColor=#F58536;gradientColor=none;" vertex="1" parent="1">
+          <mxGeometry x="400" y="532.5" width="76.5" height="93" as="geometry" />
+        </mxCell>
+        <mxCell id="UK1pHQdg1DBT67tk97Uu-12" value="WAF" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.waf;fillColor=#759C3E;gradientColor=none;" vertex="1" parent="1">
+          <mxGeometry x="250" y="532.5" width="76.5" height="93" as="geometry" />
+        </mxCell>
+        <mxCell id="UK1pHQdg1DBT67tk97Uu-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="UK1pHQdg1DBT67tk97Uu-12" target="UK1pHQdg1DBT67tk97Uu-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UK1pHQdg1DBT67tk97Uu-15" value="2" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="148" y="520" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="UK1pHQdg1DBT67tk97Uu-16" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Design Brief:&lt;/h1&gt;&lt;div&gt;1.&amp;nbsp;https://ably.com/blog/how-to-build-a-serverless-websocket-platform&lt;/div&gt;&lt;div&gt;2. Most of the time the service won&#39;t be used, so serverless makes the most sense&lt;/div&gt;&lt;div&gt;3. CDK stuff should be in a new repo - making this generic so I can deploy basically any application in this format?&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-wrap: nowrap; background-color: initial;&quot;&gt;2, %3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%26lt%3Bh1%20style%3D%26quot%3Bmargin-top%3A%200px%3B%26quot%3B%26gt%3BHigh%20Level%20Explanation%3A%26lt%3B%2Fh1%26gt%3B%26lt%3Bdiv%26gt%3B1.%20Client%20browser%20%2F%20device%20does%20a%20DNS%20lookup%20to%20Route%2053%26lt%3B%2Fdiv%26gt%3B%26lt%3Bdiv%26gt%3B2.%20Browser%20gets%20the%20IP%20and%20goes%20through%20WAF%2FCF%2FS3%20to%20get%20the%20frontend%20site%26lt%3B%2Fdiv%26gt%3B%26lt%3Bdiv%26gt%3B3.%20Browser%20makes%20subsequence%20requests%20to%26amp%3Bnbsp%3B%26lt%3B%2Fdiv%26gt%3B%22%20style%3D%22text%3Bhtml%3D1%3BwhiteSpace%3Dwrap%3Boverflow%3Dhidden%3Brounded%3D0%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22-570%22%20y%3D%22270%22%20width%3D%22670%22%20height%3D%22120%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;&lt;span style=&quot;background-color: initial; font-size: 0px; text-wrap: nowrap;&quot;&gt;&lt;font face=&quot;monospace&quot; color=&quot;rgba(0, 0, 0, 0)&quot;&gt;https://ably.com/blog/how-to-build-a-serverless-websocket-platform&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial; color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-wrap: nowrap;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%26lt%3Bh1%20style%3D%26quot%3Bmargin-top%3A%200px%3B%26quot%3B%26gt%3BHigh%20Level%20Explanation%3A%26lt%3B%2Fh1%26gt%3B%26lt%3Bdiv%26gt%3B1.%20Client%20browser%20%2F%20device%20does%20a%20DNS%20lookup%20to%20Route%2053%26lt%3B%2Fdiv%26gt%3B%26lt%3Bdiv%26gt%3B2.%20Browser%20gets%20the%20IP%20and%20goes%20through%20WAF%2FCF%2FS3%20to%20get%20the%20frontend%20site%26lt%3B%2Fdiv%26gt%3B%26lt%3Bdiv%26gt%3B3.%20Browser%20makes%20subsequence%20requests%20to%26amp%3Bnbsp%3B%26lt%3B%2Fdiv%26gt%3B%22%20style%3D%22text%3Bhtml%3D1%3BwhiteSpace%3Dwrap%3Boverflow%3Dhidden%3Brounded%3D0%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22-570%22%20y%3D%22270%22%20width%3D%22670%22%20height%3D%22120%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial; color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-wrap: nowrap;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="10" y="70" width="670" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="UK1pHQdg1DBT67tk97Uu-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="UK1pHQdg1DBT67tk97Uu-17" target="UK1pHQdg1DBT67tk97Uu-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UK1pHQdg1DBT67tk97Uu-17" value="API Gateway" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.api_gateway;fillColor=#D9A741;gradientColor=none;" vertex="1" parent="1">
+          <mxGeometry x="560" y="532.5" width="76.5" height="93" as="geometry" />
+        </mxCell>
+        <mxCell id="UK1pHQdg1DBT67tk97Uu-19" value="CreateRoom Lambda" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.lambda;fillColor=#F58534;gradientColor=none;" vertex="1" parent="1">
+          <mxGeometry x="750" y="670" width="76.5" height="93" as="geometry" />
+        </mxCell>
+        <mxCell id="UK1pHQdg1DBT67tk97Uu-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.35;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="UK1pHQdg1DBT67tk97Uu-10" target="UK1pHQdg1DBT67tk97Uu-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UK1pHQdg1DBT67tk97Uu-26" value="JoinRoom Lambda" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.lambda;fillColor=#F58534;gradientColor=none;" vertex="1" parent="1">
+          <mxGeometry x="750" y="960" width="76.5" height="93" as="geometry" />
+        </mxCell>
+        <mxCell id="UK1pHQdg1DBT67tk97Uu-29" value="ActionLambda" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.lambda;fillColor=#F58534;gradientColor=none;" vertex="1" parent="1">
+          <mxGeometry x="750" y="810" width="76.5" height="93" as="geometry" />
+        </mxCell>
+        <mxCell id="UK1pHQdg1DBT67tk97Uu-30" value="ActionLambda -&amp;gt; one endpoint to hit to do an action in a room? EG Select a card, end a turn, are the two actions i think we have at the moment, but also might be like &quot;suggestion&quot; etc will c" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="870" y="833" width="360" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="UK1pHQdg1DBT67tk97Uu-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="UK1pHQdg1DBT67tk97Uu-17" target="UK1pHQdg1DBT67tk97Uu-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UK1pHQdg1DBT67tk97Uu-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="UK1pHQdg1DBT67tk97Uu-10" target="UK1pHQdg1DBT67tk97Uu-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="438" y="359" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UK1pHQdg1DBT67tk97Uu-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="UK1pHQdg1DBT67tk97Uu-17" target="UK1pHQdg1DBT67tk97Uu-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UK1pHQdg1DBT67tk97Uu-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="UK1pHQdg1DBT67tk97Uu-17" target="UK1pHQdg1DBT67tk97Uu-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
